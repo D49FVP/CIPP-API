@@ -80,6 +80,7 @@ if ($Request.query.TenantFilter -ne 'AllTenants') {
             MFARegistration = $MFARegUser
             CoveredByCA     = ($UserCAState -join ', ')
             CoveredBySD     = $SecureDefaultsState
+            createdDateTime = $_.createdDateTime
         }
     }
 }
